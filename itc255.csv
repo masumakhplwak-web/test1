@@ -1,0 +1,31 @@
+Gender,Age,High/cm,Sport,Level of Satisfaction,SkillLevel
+F,20,160.4,YES,very staisfied,Intermediate
+F,25,162,YES,staisfied,Intermediate
+F,20,170,YES,staisfied,Beginner
+M,26,175.3,YES,not staisfied,Beginner
+F,29,150.5,NO,very staisfied,Advanced
+M,30,189.5,NO,very staisfied,Intermediate
+M,29,180,YES,very staisfied,Professional 
+F,23,169.4,NO,not staisfied,Beginner
+M,32,177.5,YES,staisfied,Advanced
+F,31,163.4,YES,not staisfied,Beginner
+F,26,170,NO,very staisfied,Advanced
+M,23,185.9,NO,staisfied,Intermediate
+M,22,169.5,YES,staisfied,Intermediate
+M,21,180.7,YES,not staisfied,Beginner
+F,30,166.5,NO,not staisfied,Advanced
+F,27,175.3,YES,very staisfied,Professional 
+M,34,183.2,NO,staisfied,Professional 
+F,33,172,NO,staisfied,Professional 
+M,32,174.5,NO,not staisfied,Intermediate
+F,31,168.5,YES,very staisfied,Advanced
+F,27,168.9,YES,very staisfied,Beginner
+M,24,184.7,YES,staisfied,Beginner
+M,26,182.2,NO,staisfied,Intermediate
+M,29,190,NO,not staisfied,Intermediate
+M,30,175.5,YES,not staisfied,Advanced
+F,35,160,NO,staisfied,Advanced
+F,36,165.3,YES,staisfied,Professional 
+M,35,178,YES,very staisfied,Beginner
+F,31,171,NO,staisfied,Beginner
+F,20,155.5,YES,very staisfied,Professional 
