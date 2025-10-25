@@ -119,3 +119,72 @@ names(y)
 hist(y$T)
 plot(density(y$T))
 
+#GGPLOT2
+library(tidyverse)
+itc255<- read.csv("itc255.csv")  
+head(itc255)
+colnames (itc255)
+#1Scatterplot
+
+ggplot(data = itc255, mapping = aes(x = High.cm, y = Age)) +
+  geom_point()
+ggplot(data = itc255, mapping = aes(x = Gender, y = Age, color = Sport)) +
+  geom_point()
+
+#2Smooth line
+ggplot(data = itc255, mapping = aes(x = Gender, y = Age)) +
+ geom_point(color = "blue") +      
+  geom_smooth(color = "red") 
+theme_classic() +                      
+  ggtitle("Age vs Gender") +             
+  xlab("Gender") +                        
+  ylab("Age") 
+ggplot(data = itc255, mapping = aes(x = Gender, y = SkillLevel)) +
+  geom_point() +
+  geom_smooth()
+
+#3Bar chart
+ggplot(data = itc255, aes(x = SkillLevel)) +
+  geom_bar()
+ggplot(data = itc255, aes(x = SkillLevel, fill = Sport)) +
+  geom_bar(position = "dodge")
+
+#4Histogram
+ggplot(data = itc255, aes(x = High.cm)) +
+  geom_histogram(bins = 10)
+
+#5Density plot
+
+ggplot(data = itc255, aes(x = Level.of.Satisfaction)) +
+  geom_density()
+
+#6Boxplot
+ggplot(data = itc255, aes(x = Sport, y = Level.of.Satisfaction)) +
+  geom_boxplot()
+
+#7Facets
+ggplot(data = itc255, aes(x = Gender, y = Age)) +
+  geom_point() +
+  facet_wrap(~ Sport)
+ggplot(data = itc255, aes(x = Gender, y = Age)) +
+  geom_point(color = "Dark Blue") +
+  geom_smooth(color = "Green") +
+  facet_grid(Gender ~ Age)
+
+p <- ggplot(itc255, aes(x = Gender, y = Age)) +
+  geom_point(color = "blue") +      
+  geom_smooth(color = "black") +      
+  facet_grid(Sport ~ SkillLevel) + 
+  ggtitle("Age vs Gender by Sport and SkillLevel") +  # Step 3: Title
+  xlab("Sport") + 
+  ylab("Age")
+
+# View the plot
+p
+
+# Save the plot
+ggsave("myplot.png", plot = p)
+
+
+
+
