@@ -175,7 +175,7 @@ p <- ggplot(itc255, aes(x = Gender, y = Age)) +
   geom_point(color = "blue") +      
   geom_smooth(color = "black") +      
   facet_grid(Sport ~ SkillLevel) + 
-  ggtitle("Age vs Gender by Sport and SkillLevel") +  # Step 3: Title
+  ggtitle("Age vs Gender by Sport and SkillLevel") +  
   xlab("Sport") + 
   ylab("Age")
 
